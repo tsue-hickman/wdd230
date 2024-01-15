@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #F9FBB2; /* Example: Blue color */
+    --text-color: #A5ABAF;
+    --background-color: #7C6354;
+    --accent-color: #CCE417; /* Example: Red color */
+    --accent-color2: #7C6354; 
+  }
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
