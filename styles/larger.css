@@ -1,60 +1,16 @@
-body {
-    font-family: ;
-    font-size: 18pt;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  h1 {
-
-  }
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-
-  nav {
-    text-align: center;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .card {
-    border: 1px solid #ddd;
-    padding: 10px;
-  }
-    @media screen and (min-width: 768px) {
-      nav {
-        display: flex;
-        justify-content: center;
-      }
-
-      main {
-        grid-template-columns: repeat(2, 1fr);
-      }
+  @media screen and (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: center;
     }
 
-    
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
+  @media only screen (min-width: 32em) {
+    .card1 {
+      grid-template-columns: 1fr; 
+    }
+  } 

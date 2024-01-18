@@ -1,18 +1,16 @@
-document.addEventListener("DOMContentLoaded", function ()) {
-    // current year
-    const currentYear = new Date().getFullYear();
+// get current year
 
-    // Set copyright year 
-    const copyrightParagraph = document.getElementById("copyright");
-    if (copyrightParagraph) {
-        copyrightParagraph.textContent = "©  2024  Tayler Hickman   United States of America"
-    }
-    // last modified date of doc
-    const lastModifiedDate = document.lastModified;
+const currentYearElement = document.querySelector('#copyright');
+const currentYear = new Date().getFullYear();
+currentYearElement.innerHTML = `&copy;${currentYear} Tayler Sue Hickman`;
 
-    // set last mod date in 2nd pg
-    const lastModifiedParagraph = document.getElementById("lastModified");
-    if (lastModifiedParagraph){
-        lastModifiedParagraph.textContent = "Last Modified: ${lastModifiedDate}";
-    }
+// get last modified date
+function getLastModifiedDate() {
+    const lastModifiedElement = document.querySelector('#lastModified');
+    const lastModified = document.lastModified;
+    lastModifiedElement.innerHTML = `Last Modified: <em>${lastModified}</em>`;
 }
+
+getLastModifiedDate();
+
+
