@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #F9FBB2; /* Example: Blue color */
-  --text-color: #A5ABAF;
-  --background-color: #b36d45;
-  --accent-color: #CCE417; /* Example: Red color */
+  --primary-color: #B0D7FF; /* Example: Blue color */
+  --text-color: white;
+  --background-color: #ADACB5;
+  --accent-color: #2D3142; /* Example: Red color */
   --accent-color2: #7C6354; 
 }
 
@@ -19,6 +19,7 @@ header {
   text-align: center;
   padding: 20px;
   background-color: var(--primary-color);
+  
 }
 
 #tsuepic {
@@ -30,6 +31,7 @@ header {
   font-size: 1.5em;
   display: block;
   margin-top: 10px;
+  color: black;
 }
 
 nav#nav1 {
