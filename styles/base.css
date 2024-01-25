@@ -8,8 +8,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -69,8 +67,8 @@ h1.headnme {
   color: var(--primary-color);
 }
 
-.card1,
-.card2 {
+
+.card2, .card1 {
   margin-top: 20px;
   border: 1px solid #ddd;
   padding: 20px;
