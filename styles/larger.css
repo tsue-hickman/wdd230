@@ -1,33 +1,30 @@
-  @media screen and (min-width: 768px) {
-    nav {
-      display: flex;
-      justify-content: space-around;
-      font-size: 40px;
-    }
-
-    main {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none; /* hide hamburger button */
   }
+  .navigation {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+  }
+
   main {
     display: grid;
     grid-template-columns: 0.8fr auto;
     grid-gap: 70px;
-   
-    
-    }
-  .headb4name{
+  }
+
+  .headb4name {
     text-align: center;
     text-decoration: underline;
     grid-column: 1/3;
     padding: 0%;
-
   }
-  .headnme{
+  .headnme {
     text-align: center;
   }
-
-
-
- 
- 
+}

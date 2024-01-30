@@ -10,7 +10,6 @@
     <meta name="author" content="Tayler Sue Hickman" />
     <title>Tayler Sue Hickman - WDD 230 - Web Frontend Development</title>
     <link rel="icon" href="images/favicon.png" type="image/png/favicon" />
-    <img src="images/sidneyiowa.jpg" alt="picture of the sign in my hometown" />
     <link
       rel="url hometown"
       href="https://www.onlyinyourstate.com/iowa/small-town-capital-ia/"
@@ -21,13 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
   </head>
 
   <!-- In the <body>, create a layout using header, nav, main, and footer elements in that order.
@@ -38,12 +33,24 @@ Include four links in the navigation nav named "Home", "Chamber", "Site Plan", a
       <img id="tsuepic" src="images/tsue.jpg" alt="Profile Pic of Tayler" />
       <span class="mynameheader">Tayler Sue Hickman</span>
     </header>
+
+    <button class="hammenu" id="menu"></button>
+    <nav class="navigation">
+      <a href="#" title="Home">Home</a>
+      <a href="#" title="About Us" class="active">About Us</a>
+      <a href="#" title="Service">Services</a>
+      <a href="#" title="History">Products</a>
+      <a href="#" title="Contact">Contact Us</a>
+    </nav>
+
+    <div class="stuff"></div>
     <nav id="nav1">
       <a href="home">Home</a>
       <a href="chamber">Chamber</a>
       <a href="week01/siteplan/chamber-site-plan.html">Site Plan</a>
       <a href="form">Form</a>
     </nav>
+
     <!-- The <main> element contains the following: A h1 tag with the words "WDD 230: Web Frontend Development". -->
     <main>
       <h1 class="headb4name">WDD 230: Web Frontend Development</h1>
@@ -101,5 +108,7 @@ The second paragraph has an id of "lastModified" and will be populated with Java
       <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+ .sidneyiowa{
+      max-width: 233px;
+      height: 175px;
+    }
+
 <h1>Responsive Navigation</h1>
 
 <button id="menu"></button>
