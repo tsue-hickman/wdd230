@@ -1,14 +1,13 @@
 :root {
-  --primary-color: #B0D7FF; /* Example: Blue color */
+  --primary-color: #b0d7ff; /* Example: Blue color */
   --text-color: white;
-  --background-color: #ADACB5;
-  --accent-color: #2D3142; /* Example: Red color */
-  --accent-color2: #7C6354; 
+  --background-color: #adacb5;
+  --accent-color: #2d3142; /* Example: Red color */
+  --accent-color2: #7c6354;
 }
 
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -18,7 +17,6 @@ header {
   text-align: center;
   padding: 20px;
   background-color: var(--primary-color);
-  
 }
 
 #tsuepic {
@@ -32,6 +30,42 @@ header {
   margin-top: 10px;
   color: black;
 }
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+main {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 760px;
+  background-color: #eee;
+  color: #000;
+}
+
+main img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  border: 1px solid #333;
+  box-shadow: 0 0 15px #777;
+}
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+} */
 
 #menu {
   display: block;
@@ -49,8 +83,6 @@ header {
 nav#nav1 {
   background-color: var(--accent-color);
   overflow: hidden;
- 
- 
 }
 
 nav#nav1 a {
@@ -81,8 +113,8 @@ h1.headnme {
   color: var(--primary-color);
 }
 
-
-.card2, .card1 {
+.card2,
+.card1 {
   margin-top: 20px;
   border: 1px solid #ddd;
   padding: 20px;
@@ -119,7 +151,7 @@ footer {
     padding: 10px;
   }
 
-  #nav1{
+  #nav1 {
     display: flex;
     flex-direction: column;
   }
