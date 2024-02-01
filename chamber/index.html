@@ -3,22 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="WDD 230 - Web Front End Development Tayler Sue Hickman chamber site pages"
+    />
+    <meta name="author" content="Tayler Sue Hickman" />
+    <title>Tayler Sue Hickman - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="images/faviconomaha.jpg" type="image/jpg/favicon" />
+    <link
+      rel="url hometown"
+      href="https://www.onlyinyourstate.com/iowa/small-town-capital-ia/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
   </head>
   <body>
-    <header></header>
+    <a href="images/omaha-skyline-hero.jpg" target="_blank"
+      ><img src="images/omaha-skyline-hero.jpg"
+    /></a>
+    <header class="hero-banner">
+      <h1>Welcome to the Chamber of Commerce - Omaha, Nebraska</h1>
+      <p>Chamber of Commerce - Omaha, Nebraska</p>
+    </header>
     <main>
-      <h1></h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sunt
-        id. Inventore, reiciendis commodi omnis nostrum blanditiis earum
-        deleniti dolore repellendus facilis fugiat ab. Sequi quisquam adipisci
-        nihil hic corporis.
-      </p>
+      <section class="cta">
+        <h2>Join Our Chamber!</h2>
+        <p>Click here to learn more about our membership.</p>
+        <a href="join.html" class="cta-btn">Join Now</a>
+      </section>
+      <nav>
+        <section class="currentevents">
+          <h2>Current Events</h2>
+          <p>Upcoming events for the Chamber of Commerce in Omaha, Nebraska</p>
+          <a href="events.html" class="events-btn">Events</a>
+        </section>
+      </nav>
     </main>
-    <nav></nav>
-    <section class="hero-banner"></section>
+    <section class="weather-card" id="weatherCard">
+      <h2>Weather Card</h2>
+    </section>
+    <section class="spotlights" id="spotlights">
+      <h2>Spotlights</h2>
+      <ol>
+        <li>Warren Buffet</li>
+        <li>College World Series - Baseball</li>
+        <li>Wrigley Field</li>
+      </ol>
+    </section>
+    <footer>
+      <!-- <p>© 2024 Tayler Hickman WDD 230 project BYU Idaho</p> -->
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/footer.js"></script>
   </body>
 </html>
