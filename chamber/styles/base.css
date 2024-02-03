@@ -1,8 +1,26 @@
+/* CSS for the main home page */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  text-align: center;
+}
+
 /* CSS for the button on the main home page */
 .cta {
   text-align: center;
   padding: 50px;
   background-color: #f0f0f0;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cta-btn {
@@ -15,6 +33,8 @@
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 .cta-btn:hover {
@@ -40,6 +60,13 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.spotlights {
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 /* CSS for the footer */
