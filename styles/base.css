@@ -156,3 +156,29 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Hamburger Menu Styles */
+.navigation {
+  display: none;
+}
+
+.show-menu .navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.hammenu {
+  display: block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Add any additional dark mode styles as needed */

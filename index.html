@@ -23,41 +23,24 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+    <!-- Add your custom normalization CSS file -->
   </head>
-
-  <!-- In the <body>, create a layout using header, nav, main, and footer elements in that order.
-Include four links in the navigation nav named "Home", "Chamber", "Site Plan", and "Form". -->
 
   <body>
     <header>
       <img id="tsuepic" src="images/tsue.jpg" alt="Profile Pic of Tayler" />
       <span class="mynameheader">Tayler Sue Hickman</span>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">⚙️</button>
     </header>
 
-    <!-- <div id="mode">🕶️</div>
-  <h1>Dark Mode Example</h1>
-  <main>
-    <section>
-      <h2>Demonstration</h2>
-      <p>Click the button located on the top right corner of the page to toggle the dark mode setting for this main content area.</p>
-      <picture>
-        <img src="https://placekitten.com/200/200" alt="Placeholder image of a kitten" loading="lazy" width="200" height="200">
-      </picture>
-    </section>
-    <section>
-      <h2>Alternative - toggle class</h2>
-      <a href="https://codepen.io/blazzard-jason/pen/PoVbxgm" target="_blank">This example uses a class toggle to employ the dark/light mode.</a>
-    </section>
-  </main>
-  <script src="script.js"></script> -->
-
-    <button class="hammenu" id="menu"></button>
+    <button class="hammenu" id="menu" onclick="toggleMenu()"></button>
     <nav class="navigation">
       <a href="#" title="Home">Home</a>
-      <a href="#" title="About Us" class="active">About Us</a>
-      <a href="#" title="Service">Services</a>
-      <a href="#" title="History">Products</a>
-      <a href="#" title="Contact">Contact Us</a>
+      <a href="#" title="About Us">About Us</a>
+      <a href="#" title="Services">Services</a>
+      <a href="#" title="Products">Products</a>
+      <a href="#" title="Contact Us">Contact Us</a>
     </nav>
 
     <div class="stuff"></div>
@@ -68,42 +51,30 @@ Include four links in the navigation nav named "Home", "Chamber", "Site Plan", a
       <a href="form">Form</a>
     </nav>
 
-    <!-- The <main> element contains the following: A h1 tag with the words "WDD 230: Web Frontend Development". -->
     <main>
       <h1 class="headb4name">WDD 230: Web Frontend Development</h1>
-      <!-- A section tag with the class attribute named "card" that contains the following: An h2 tag containing
-"Learning Activities" as text. An ul with list items li and anchors a for learning activities that will 
-be populated throughout the the course. -->
       <section class="card1">
         <h2>Learning Activities</h2>
         <ul>
           <li><a href="#">Week 1</a>-----</li>
           <li>
             <a href="#">Week 2</a>
-            <link
+            <a
               rel="design HTML page"
               href="tsue-hickman.github.io/wdd230/week2/design.html"
-            />
-            <link
+            ></a>
+            <a
               rel="link to codepen"
               href="https://codepen.io/Tayler-Hickman"
-            />
-            <link
+            ></a>
+            <a
               rel="DOM"
               href="https://tsue-hickman.github.io/wdd230/week2/bom.html"
-            />
+            ></a>
           </li>
-
-          <li><a href="#">Week 3</a>-----</li>
-          <li><a href="#">Week 4</a>-----</li>
-          <li><a href="#">Week 5</a>-----</li>
-          <li><a href="#">Week 6</a>-----</li>
+          <!-- Add other weeks as needed -->
         </ul>
       </section>
-      <!-- A second section with a class name of "card" that contains the following:
-An h2 tag containing "Information" as text.
-Information placeholders about the weather, number of visits to the page, etc. -->
-
       <section class="card2">
         <h2>Information</h2>
         <p>Weather: [placeholder]</p>
@@ -112,20 +83,13 @@ Information placeholders about the weather, number of visits to the page, etc. -
       </section>
     </main>
 
-    <!-- The <footer> has two paragraphs p:
-The first paragraph contains the following:
-The copyright symbol and current year where the year will be dynamically populated using JavaScript code.
-Your name.
-Your state or country (Adding the flag is optional.) 
-The second paragraph has an id of "lastModified" and will be populated with JavaScript code.-->
-
     <footer>
-      <!-- <p>© 2024 Tayler Hickman United States of America</p> -->
       <p id="copyright"></p>
       <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/darkmode.js"></script>
   </body>
 </html>

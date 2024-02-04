@@ -1,14 +1,9 @@
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
+function toggleMenu() {
+  var navigation = document.querySelector('.navigation');
+  navigation.classList.toggle('show-menu');
+}
 
-modeButton.addEventListener("click", () => {
-  if (modeButton.textContent.includes("🕶️")) {
-    main.style.background = "#000";
-    main.style.color = "#fff";
-    modeButton.textContent = "🔆";
-  } else {
-    main.style.background = "#eee";
-    main.style.color = "#000";
-    modeButton.textContent = "🕶️";
-  }
-});
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle('dark-mode');
+}
