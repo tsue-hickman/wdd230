@@ -10,7 +10,8 @@ body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   color: var(--text-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-image: linear-gradient(to bottom right, black, Blue);
 }
 
 header {
