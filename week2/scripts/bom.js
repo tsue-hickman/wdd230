@@ -23,4 +23,11 @@ button.addEventListener('click', function()  {
 });
 // button.addEventlistener('click', () => {
 
-// });
+// }); 
+const chaptersArray = getChapterList() || [];
+
+chaptersArray.foreach((chapter) => {
+   displayList(chapter);
+    
+});
+
