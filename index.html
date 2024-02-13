@@ -52,16 +52,29 @@
       <a href="week01/siteplan/chamber-site-plan.html">Site Plan</a>
       <a href="form">Form</a>
     </nav>
-    <div>
-      <img
-        class="hero-img"
-        src="images/dctempleimg4websiteactual.webp"
-        alt="hero image"
-      />
-    </div>
 
     <main>
-      <picture> <source srcset="" </picture>
+      <main>
+        <picture>
+          <source
+            srcset="images/dctempleimg4websiteactualcopy2.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/dctempleimg4websiteactual3.webp"
+            media="(min-width: 401px)"
+          />
+          <img
+            class="hero-img"
+            src="images/dctempleimg4websiteactual.webp"
+            alt="Favorite Latter-day Temple"
+          />
+        </picture>
+        <div class="overlay">
+          <div class="overlay-text">Washington DC Temple</div>
+        </div>
+      </main>
+
       <h1 class="headb4name">WDD 230: Web Frontend Development</h1>
       <section class="card1">
         <h2>Learning Activities</h2>
