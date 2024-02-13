@@ -10,8 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   color: var(--text-color);
-  /* background-color: var(--background-color); */
-  background-image: linear-gradient(to bottom right, black, Blue);
+  background-color: rgb(154, 119, 62);
 }
 
 header {
@@ -31,42 +30,6 @@ header {
   margin-top: 10px;
   color: black;
 }
-
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Roboto, sans-serif;
-}
-
-main {
-  margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  width: 760px;
-  background-color: #eee;
-  color: #000;
-}
-
-main img {
-  float: right;
-  margin: 0 0 1rem 1rem;
-  border: 1px solid #333;
-  box-shadow: 0 0 15px #777;
-}
-
-#mode {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 3rem;
-  cursor: pointer;
-  font-size: 2rem;
-} */
 
 #menu {
   display: block;
@@ -104,9 +67,16 @@ main {
   padding: 20px;
 }
 
+.hero-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/dctempleimg4websiteactual.webp");
+  background-position: center;
+  background-size: cover;
+}
 h1.headb4name {
   font-size: 2em;
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 h1.headnme {
@@ -114,9 +84,17 @@ h1.headnme {
   color: var(--primary-color);
 }
 
-.card2,
 .card1 {
+  width: 70%;
   margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.card2 {
+  width: 70%;
+  margin-top: 10px;
   border: 1px solid #ddd;
   padding: 20px;
   background-color: var(--primary-color);
@@ -145,11 +123,6 @@ footer {
 
   h1.headnme {
     font-size: 2em;
-  }
-
-  .card1,
-  .card2 {
-    padding: 10px;
   }
 
   #nav1 {
@@ -181,5 +154,3 @@ footer {
   background-color: #1a1a1a;
   color: #ffffff;
 }
-
-/* Add any additional dark mode styles as needed */

@@ -14,8 +14,12 @@
 
   main {
     display: grid;
-    grid-template-columns: 0.8fr auto;
+    /* grid-template-columns: 0.8fr auto; */
     grid-gap: 70px;
+  }
+
+  .card2 {
+    width: 100%;
   }
 
   .headb4name {
