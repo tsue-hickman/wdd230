@@ -45,8 +45,7 @@ nav#nav1 a:hover {
 }
 
 main {
-  display: grid;
-  /* grid-template-columns: 0.8fr auto; */
+  display:block
   grid-gap: 70px;
 }
 
@@ -54,6 +53,10 @@ main {
   padding: 20px;
 }
 
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 footer {
   text-align: center;
   padding: 10px;
