@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <img id="tsuepic" src="images/tsue.webp" alt="Profile Pic of Tayler" />
+      <span class="mynameheader">Tayler Sue Hickman</span>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">⚙️</button>
+    </header>
+
+    <button class="hammenu" id="menu" onclick="toggleMenu()"></button>
+    <nav class="navigation">
+      <a href="#" title="Home">Home</a>
+      <a href="#" title="About Us">About Us</a>
+      <a href="#" title="Services">Services</a>
+      <a href="#" title="Products">Products</a>
+      <a href="#" title="Contact Us">Contact Us</a>
+    </nav>
+
+    <main>
+      <h1>Form</h1>
+      <fieldset>
+        <legend>Username and Password</legend>
+        <label for="Username"
+          >Username: <input type="text" id="Username" name="Username" required
+        /></label>
+        <label for="Password"
+          >Password:
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            required
+            pattern="[A-Za-z8-] {8,}"
+        /></label>
+        <label for="Password"
+          >Confirm Password:
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            required
+            pattern="[A-Za-z8-] {8,}"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Email Address</legend>
+        <label for="email"
+          >Email:
+          <input
+            type="text"
+            name="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-z0-9._%+-]+@byui.edu$"
+          />Please enter a valid email address</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Rate this Page</legend>
+        <label for="rating">
+          <input
+            type="range"
+            id="page rating"
+            name="rating"
+            min="1"
+            max="10"
+            value="0"
+            step="1"
+        /></label>
+      </fieldset>
+      <input type="submit" value="Complete My Form" />
+    </main>
+
+    <footer>
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

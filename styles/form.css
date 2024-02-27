@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #b0d7ff; /* Example: Blue color */
+  --text-color: white;
+  --background-color: #adacb5;
+  --accent-color: #2d3142; /* Example: Red color */
+  --accent-color2: #7c6354;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: rgb(154, 119, 62);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+}
+
+nav#nav1 {
+  background-color: var(--accent-color);
+  overflow: hidden;
+}
+
+nav#nav1 a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav#nav1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  display: grid;
+  /* grid-template-columns: 0.8fr auto; */
+  grid-gap: 70px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+}
