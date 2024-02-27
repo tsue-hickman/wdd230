@@ -44,6 +44,32 @@ nav#nav1 a:hover {
   color: black;
 }
 
+.form{
+  text-align: center
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
 main {
   display:block
   grid-gap: 70px;
@@ -57,9 +83,19 @@ label {
   display: block;
   margin-bottom: 5px;
 }
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: var(--accent-color);
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  input[type="submit"] {
+    width: auto;
+  }
+}
+
+
+

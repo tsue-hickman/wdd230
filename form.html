@@ -23,61 +23,62 @@
     </nav>
 
     <main>
-      <h1>Form</h1>
-      <fieldset>
-        <legend>Username and Password</legend>
-        <label for="Username"
-          >Username: <input type="text" id="Username" name="Username" required
-        /></label>
-        <label for="Password"
-          >Password:
-          <input
-            type="password"
-            id="Password"
-            name="Password"
-            required
-            pattern="[A-Za-z8-] {8,}"
-        /></label>
-        <label for="Password"
-          >Confirm Password:
-          <input
-            type="password"
-            id="Password"
-            name="Password"
-            required
-            pattern="[A-Za-z8-] {8,}"
-        /></label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Email Address</legend>
-        <label for="email"
-          >Email:
+      <h1 class="form">Form</h1>
+      <form>
+        <fieldset>
+          <legend>Username and Password</legend>
+          <label for="Username">Username:</label>
           <input
             type="text"
+            id="Username"
+            name="Username"
+            required
+          /><br /><br />
+          <label for="Password">Password:</label>
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            required
+            pattern="[A-Za-z8-] {8,}"
+          /><br /><br />
+          <label for="ConfirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="ConfirmPassword"
+            name="ConfirmPassword"
+            required
+            pattern="[A-Za-z8-] {8,}"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Email Address</legend>
+          <label for="email">Email:</label>
+          <input
+            type="email"
             name="email"
             id="email"
-            name="email"
             required
             pattern="[a-zA-z0-9._%+-]+@byui.edu$"
-          />Please enter a valid email address</label
-        >
-      </fieldset>
+          /><br />
+          <span>Please enter a valid email address</span>
+        </fieldset>
 
-      <fieldset>
-        <legend>Rate this Page</legend>
-        <label for="rating">
+        <fieldset>
+          <legend>Rate this Page</legend>
           <input
             type="range"
-            id="page rating"
+            id="pageRating"
             name="rating"
             min="1"
             max="10"
             value="0"
             step="1"
-        /></label>
-      </fieldset>
-      <input type="submit" value="Complete My Form" />
+          />
+        </fieldset>
+        <input type="submit" value="Complete My Form" />
+      </form>
     </main>
 
     <footer>
