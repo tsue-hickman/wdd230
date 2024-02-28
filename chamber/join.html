@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Front End Development Tayler Sue Hickman chamber site pages"
+    />
+    <meta name="author" content="Tayler Sue Hickman" />
+    <title>Tayler Sue Hickman - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="images/faviconomaha.jpg" type="image/jpg/favicon" />
+    <link
+      rel="url hometown"
+      href="https://www.onlyinyourstate.com/iowa/small-town-capital-ia/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <a href="images/omaha-skyline-hero.jpg" target="_blank"
+      ><img src="images/omaha-skyline-hero.jpg"
+    /></a>
+    <header class="hero-banner">
+      <h1>Welcome to the Chamber of Commerce - Omaha, Nebraska</h1>
+      <p>Chamber of Commerce - Omaha, Nebraska</p>
+    </header>
+    <nav>
+      <section class="currentevents">
+        <h2>Current Events</h2>
+        <p>Upcoming events for the Chamber of Commerce in Omaha, Nebraska</p>
+        <a href="events.html" class="events-btn">Events</a>
+      </section>
+    </nav>
+    <main>
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Membership Application</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required /><br />
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Position Within Company</legend>
+          <label for="position">Position Within Company:</label>
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[a-zA-Z\s]{7,}"
+            required
+          /><br />
+          <span
+            >Please enter your title or position within your organization
+            (minimum 7 characters).</span
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Email Address</legend>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@example.com"
+            required
+          /><br />
+          <span>Please enter a valid email address</span>
+        </fieldset>
+        <fieldset>
+          <legend>Phone Number</legend>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Business/Organization Name</legend>
+          <label for="business">Business/Organization Name:</label>
+          <input type="text" id="business" name="business" required /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <label for="membership">Membership Level:</label>
+          <select id="membership" name="membership">
+            <option value="NP Membership">NP Membership (No fee)</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Business/Organization Description</legend>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+        </fieldset>
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+        <input type="submit" value="Submit Application" />
+      </form>
+    </main>
+    <footer>
+      <p>© 2024 Tayler Hickman WDD 230 project BYU Idaho</p>
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
