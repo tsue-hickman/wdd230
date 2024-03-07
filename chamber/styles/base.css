@@ -77,3 +77,32 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+.minihead {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #080357;
+}
+
+h2 {
+  color: #080357;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.eventsbtn {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 45px;
+  background-color: #dd8e31;
+}
+
+legend {
+  padding-top: 60px;
+}
