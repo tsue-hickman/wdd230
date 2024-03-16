@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Berthshire Hathaway",
+        "address": "3555 Farnam Street, Omaha, Nebraska",
+        "phone": "1-800-673-2465",
+        "website": "https://berkshirehathaway.com/",
+        "image": "berkshirehathaway.jpg",
+        "membership_level": "Platinum"
+    },
+    {
+        "name": "Medical Solutions",
+        "address": "1010 N 102nd St, Omaha, NE 68114",
+        "phone": "1.866.633.3548",
+        "website": "https://medicalsolutions.com/",
+        "image": "medicalsolutions.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Union Pacific",
+        "address": "1400 Douglas St, Omaha, NE 68179-1001",
+        "phone": "(402) 544-5000",
+        "website": " https://www.up.com/index.htm",
+        "image": "unionpacific.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Loup Logistics",
+        "address": "1400 Douglas St, #1230, Omaha, NE 68102",
+        "phone": "(800)-303-4544",
+        "website": "https://www.louplogistics.com/",
+        "image": "loupicon.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Kiewit",
+        "address": "1550 Mike Fahey St",
+        "phone": "(402) 553-5762",
+        "website": "https://www.kiewit.com/",
+        "image": "kiewit.jpg",
+        "membership_level": "Platinum"
+    },
+    {
+        "name": "Cabela’s",
+        "address": "12703 Westport Pkwy, La Vista, NE 68138",
+        "phone": "(402) 861-4800",
+        "website": " https://www.cabelas.com/shop/en",
+        "image": "cabelasicon.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Home Instead",
+        "address": "13323 California St, Omaha, NE 68154",
+        "phone": "(402) 224-6727",
+        "website": " https://www.homeinstead.com",
+        "image": "homeinsteadicon.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Werner Enterprises",
+        "address": "14507 Frontier Rd, Omaha, NE 68138 ",
+        "phone": "(402) 895-6640",
+        "website": "https://www.werner.com/",
+        "image": "werner.jpg",
+        "membership_level": "Platinum"
+    },
