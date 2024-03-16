@@ -1,0 +1,100 @@
+main {
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 700px;
+  background-color: #fff;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bed;
+  text-align: center;
+}
+
+.menu button {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+main article {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+main .grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+}
+
+main .grid-view section {
+  text-align: center;
+}
+
+main .grid-view img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
+}
+
+main .grid-view section > * {
+  margin: 0.1rem;
+}
+
+main .grid-view h3 {
+  font-family: "Caveat", cursive;
+}
+
+main .list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+main .list-view section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+main .list-view section > * {
+  margin: 0 1rem;
+}
+
+main .list-view section img {
+  display: none; /* smaller viewports only */
+}
+
+main .list-view section h3 {
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+main .list-view section:nth-child(even) {
+  background-color: #bed;
+}
+
+main article h3 {
+  font-size: 1.5rem;
+}
+
+main article p {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+main article a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+}
+
+main img {
+  height: 75px;
+  max-width: 100%;
+}

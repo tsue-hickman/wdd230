@@ -4,32 +4,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const membersContainer = document.getElementById('membersContainer');
   
     let membersData;
+    let isGridView = true;
   
     function createMemberCard(member) {
-      const card = document.createElement('div');
-      card.classList.add('member-card');
+      const card = document.createElement('article');
+      card.classList.add('member');
       card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}" />
-        <h2>${member.name}</h2>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p>Membership Level: ${member.membership_level}</p>
+        <section>
+          <img src="images/${member.image}" alt="${member.name}" />
+          <h3>${member.name}</h3>
+          <p>${member.address}</p>
+          <p>${member.phone}</p>
+          <a href="${member.website}" target="_blank">Visit Website</a>
+          <p>Membership Level: ${member.membership_level}</p>
+        </section>
       `;
       return card;
     }
   
-    function createMemberListItem(member) {
-      const listItem = document.createElement('div');
-      listItem.classList.add('member-list-item');
-      listItem.innerHTML = `
-        <h2>${member.name}</h2>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p>Membership Level: ${member.membership_level}</p>
-      `;
-      return listItem;
+    function toggleView() {
+      if (isGridView) {
+        displayMembersList();
+      } else {
+        displayMembersGrid();
+      }
+      isGridView = !isGridView;
     }
   
     function displayMembersGrid() {
@@ -45,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayMembersList() {
       membersContainer.innerHTML = ''; // Clear previous content
       membersData.forEach(member => {
-        const memberItem = createMemberListItem(member);
-        membersContainer.appendChild(memberItem);
+        const memberCard = createMemberCard(member);
+        membersContainer.appendChild(memberCard);
       });
       membersContainer.classList.remove('grid-view');
       membersContainer.classList.add('list-view');
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .catch(error => console.error('Error fetching members data:', error));
   
-    gridButton.addEventListener('click', displayMembersGrid);
-    listButton.addEventListener('click', displayMembersList);
+    gridButton.addEventListener('click', toggleView);
+    listButton.addEventListener('click', toggleView);
   });
   
