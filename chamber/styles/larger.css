@@ -98,3 +98,7 @@ main img {
   height: 75px;
   max-width: 100%;
 }
+
+a.events-btn {
+  text-align: center;
+}

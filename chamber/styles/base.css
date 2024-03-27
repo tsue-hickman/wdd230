@@ -12,9 +12,9 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
-  color: white; /* Text color */
-  background-color: #333333; /* Charcoal background */
+  font-family: "Avenir Pro", sans-serif; /* Avenir Pro font */
+  color: #333333; /* Charcoal lettering */
+  background-color: #f8f8f8; /* Off-white background */
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
 
 /* Styling the hero section */
 .hero-banner {
-  background-color: #333333; /* Charcoal background */
+  background-color: #bed;
   text-align: center;
   padding: 20px;
   position: relative; /* Make relative for absolute positioning */
@@ -67,14 +67,15 @@ body {
 
 /* Styling the footer */
 footer {
-  background-color: #ffeedd; /* Footer background color */
-  color: black; /* Footer text color */
+  background-color: #b8b8ff; /* Footer background color */
+  color: #333333; /* Charcoal lettering */
   text-align: center;
   padding: 20px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+  font-weight: bold; /* Bold footer text */
 }
 
-/* Additional styling from the second code snippet */
+/* Additional styling */
 /* Styling the call-to-action section */
 .cta {
   text-align: center;
@@ -128,7 +129,11 @@ footer {
 
 .menu button {
   padding: 1rem;
-  font-weight: 700;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* Styling the article section */
@@ -136,6 +141,7 @@ main article {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #eee;
+  font-weight: normal; /* Normal font weight for article text */
 }
 
 /* Grid view */
@@ -186,7 +192,8 @@ main .list-view section img {
 
 main .list-view section h3 {
   font-size: 1rem;
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Avenir Pro", sans-serif; /* Avenir Pro font */
+  font-weight: bold; /* Bold font weight for section headers */
 }
 
 main .list-view section:nth-child(even) {
@@ -198,12 +205,12 @@ main article h3 {
 }
 
 main article p {
-  font-weight: 600;
+  font-weight: bold; /* Bold font weight for article text */
   font-size: smaller;
 }
 
 main article a {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Avenir Pro", sans-serif; /* Avenir Pro font */
   font-size: 0.85rem;
   color: navy;
   letter-spacing: 1.1pt;
@@ -212,4 +219,8 @@ main article a {
 main img {
   height: 75px;
   max-width: 100%;
+}
+
+.events-btn {
+  text-align: center;
 }
