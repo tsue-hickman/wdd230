@@ -1,24 +1,43 @@
-/* CSS for the main home page */
+/* Resetting default margin and padding */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styling */
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* Text color */
+  background-color: #333333; /* Charcoal background */
 }
 
-main {
+.container {
+  max-width: 1000px; /* Max width for containers */
+  margin: 0 auto; /* Center containers */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+/* Styling the hero section */
+.hero-banner {
+  background-color: #333333; /* Charcoal background */
   text-align: center;
+  padding: 20px;
+  position: relative; /* Make relative for absolute positioning */
 }
 
-/* Centering the image of the dctemple */
-.hero-img {
+.hero-banner img {
+  max-width: 50%; /* Preserve image integrity */
   display: block;
   margin: 0 auto;
 }
 
-/* Center the overlay text of Washington DC temple right below the dctemple image */
+/* Center the overlay text */
 .overlay {
   position: absolute;
   top: 50%;
@@ -26,27 +45,37 @@ main {
   transform: translate(-50%, -50%);
 }
 
-/* Styling the h1 "headb4name" class */
-.headb4name {
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #3d1f00; /* Dark brown background color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  margin: 20px auto; /* Center the h1 */
-  border-radius: 10px; /* Add border-radius for rounded corners */
+/* Styling the banner underneath hero image */
+.banner {
+  background-color: #333333; /* Charcoal background */
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 100%; /* Move banner below hero image */
+  left: 0;
+  width: 100%; /* Stretch across the screen */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 
-/* Styling links */
-a {
-  color: #007bff; /* Default link color */
-  transition: color 0.3s ease; /* Smooth transition effect */
+.banner button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
-a:hover {
-  color: #0048b3; /* Dark blue color on hover */
+/* Styling the footer */
+footer {
+  background-color: #ffeedd; /* Footer background color */
+  color: black; /* Footer text color */
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 
-/* CSS for the button on the main home page */
+/* Additional styling from the second code snippet */
+/* Styling the call-to-action section */
 .cta {
   text-align: center;
   padding: 50px;
@@ -73,7 +102,7 @@ a:hover {
   background-color: #0056b3;
 }
 
-/*  CSS for the weather card */
+/* Styling the weather card */
 .weather-card {
   background-color: #fff;
   padding: 20px;
@@ -81,7 +110,6 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 20px auto;
-  border-radius: 10px;
 }
 
 .spotlights {
@@ -89,45 +117,7 @@ a:hover {
   border-radius: 10px;
 }
 
-/* CSS for the footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.minihead {
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  color: #080357;
-}
-
-h2 {
-  color: #080357;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.eventsbtn {
-  text-align: center;
-}
-
-fieldset {
-  border: none;
- 
-/* CSS to target the directory HTML page  */
-
-main {
-  margin: 0 auto;
-  padding: 0.5rem;
-  max-width: 700px;
-  background-color: #fff;
-  font-family: Roboto, Helvetica, sans-serif;
-}
-
+/* Styling the menu */
 .menu {
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -141,12 +131,14 @@ main {
   font-weight: 700;
 }
 
+/* Styling the article section */
 main article {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   background-color: #eee;
 }
 
+/* Grid view */
 main .grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -171,6 +163,7 @@ main .grid-view h3 {
   font-family: "Caveat", cursive;
 }
 
+/* List view */
 main .list-view {
   display: flex;
   flex-direction: column;
