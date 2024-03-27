@@ -1,6 +1,6 @@
-const apiKey = 'c847e44f43b328647dbb63f150f7e303';
+const apiKey = '9a18b43f6cbba9453fcf7b632a35e56c';
 const city = 'Omaha';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=41.25716582029466&lon=-95.94462152722332&appid=9a18b43f6cbba9453fcf7b632a35e56c`;
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +20,7 @@ async function getWeatherData() {
     } catch (error) {
         console.error('Error fetching weather data:', error.message);
     }
-    const forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+    const forecastApiUrl = `api.openweathermap.org/data/2.5/forecast?lat=41.25716582029466&lon=-95.94462152722332&appid=9a18b43f6cbba9453fcf7b632a35e56c `;
 
 }
 // get current weather data
@@ -45,6 +45,18 @@ function displayWeather(weatherData) {
 
     weatherCard.innerHTML = content;
 }
+
+
+// Assuming you have loaded member data into 'membersData' variable
+const spotlightsContainer = document.getElementById('spotlightAds');
+const silverGoldMembers = membersData.filter(member => member.membership_level === 'Silver Membership' || member.membership_level === 'Gold Membership');
+const randomSpotlights = getRandomMembers(silverGoldMembers, 3); // Change 3 to the desired number of spotlights
+randomSpotlights.forEach(member => {
+    // Create HTML for spotlight advertisement and append to container
+});
+ 
+
+
 
 
 
