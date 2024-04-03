@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #b0d7ff; /* Example: Blue color */
+  --text-color: white;
+  --background-color: #adacb5;
+  --accent-color: #2d3142; /* Example: Red color */
+  --accent-color2: #c66e37;
+}
+
 /* Resetting default margin and padding */
 html,
 body {
@@ -13,8 +21,14 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: "Avenir Pro", sans-serif; /* Avenir Pro font */
-  color: #333333; /* Charcoal lettering */
-  background-color: #f8f8f8; /* Off-white background */
+  color: var(--text-color); /* Charcoal lettering */
+  background-color: var(--background-color); /* Off-white background */
+}
+
+.currentevents {
+  background-color: var(--accent-color2);
+  color: white;
+  text-align: center;
 }
 
 .container {
@@ -25,7 +39,7 @@ body {
 
 /* Styling the hero section */
 .hero-banner {
-  background-color: #bed;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 20px;
   position: relative; /* Make relative for absolute positioning */
@@ -47,28 +61,31 @@ body {
 
 /* Styling the banner underneath hero image */
 .banner {
-  background-color: #333333; /* Charcoal background */
+  background-color: var(--accent-color); /* Charcoal background */
   text-align: center;
   padding: 10px;
   position: absolute;
   top: 100%; /* Move banner below hero image */
   left: 0;
-  width: 100%; /* Stretch across the screen */
+  height: 20px;
+  width: 988px; /* Stretch across the screen */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 
 .banner button {
   background-color: transparent;
   border: none;
-  color: white;
-  font-size: 1.5em;
+  color: var(--text-color);
+  font-size: 0.5rem;
   cursor: pointer;
+  padding: 0%;
+  width: 988px;
 }
 
 /* Styling the footer */
 footer {
-  background-color: #b8b8ff; /* Footer background color */
-  color: #333333; /* Charcoal lettering */
+  background-color: var(--primary-color); /* Footer background color */
+  color: var(--text-color); /* Charcoal lettering */
   text-align: center;
   padding: 20px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
@@ -77,10 +94,18 @@ footer {
 
 /* Additional styling */
 /* Styling the call-to-action section */
+
+.currentevents {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+}
+
 .cta {
+  background-color: var(--accent-color2);
+  color: white;
   text-align: center;
   padding: 50px;
-  background-color: #f0f0f0;
   width: 80%;
   margin: 20px auto;
   border-radius: 10px;
@@ -92,7 +117,7 @@ footer {
   padding: 10px 20px;
   margin-top: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
   background-color: #007bff;
   border-radius: 5px;
   font-weight: bold;
@@ -106,6 +131,7 @@ footer {
 /* Styling the weather card */
 .weather-card {
   background-color: #fff;
+  color: rgb(60, 58, 58);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -123,7 +149,7 @@ footer {
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
-  background-color: #bed;
+  background-color: var(--primary-color);
   text-align: center;
 }
 
@@ -197,7 +223,7 @@ main .list-view section h3 {
 }
 
 main .list-view section:nth-child(even) {
-  background-color: #bed;
+  background-color: var(--primary-color);
 }
 
 main article h3 {
