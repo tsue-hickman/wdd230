@@ -144,6 +144,19 @@ footer {
   border-radius: 10px;
 }
 
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+p {
+  display: grid;
+  grid-template-columns: 1/3;
+  text-align: center;
+  max-width: 500px;
+}
+
 /* Styling the menu */
 .menu {
   margin: 1rem auto;
