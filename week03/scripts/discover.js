@@ -1,3 +1,4 @@
+// Check for last visit date and display message
 document.addEventListener("DOMContentLoaded", function () {
     // Function to display the message based on time between visits
     function displayVisitMessage() {
@@ -48,3 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(lazyImage);
     });
 });
+
