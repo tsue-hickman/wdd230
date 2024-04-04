@@ -31,6 +31,7 @@
     <header class="hero-banner" style="height: 174.23px">
       <h1>Welcome to the Chamber of Commerce - Omaha, Nebraska</h1>
       <p>Chamber of Commerce - Omaha, Nebraska</p>
+      <div class="spaceholder"></div>
       <div id="meetAndGreetBanner" class="banner" style="height: 50px">
         <p>
           Join us for the Chamber of Commerce meet and greet on Wednesday at
@@ -39,7 +40,18 @@
         <button id="closeBannerButton">Close</button>
       </div>
     </header>
-    <main>
+    <nav class="navigation">
+      <!-- Hamburger Menu -->
+      <div class="menu">
+        <button id="menuToggle">☰ Menu</button>
+        <div id="menuItems" class="menu-items">
+          <a href="discover.html" title="Discover">Discover</a>
+          <a href="directory.html" title="Directory">Directory</a>
+          <a href="join.html" title="Join">Join</a>
+        </div>
+      </div>
+    </nav>
+      <div class="spaceholder"></div>
       <section class="cta">
         <h2>Join Our Chamber!</h2>
         <p>Click here to learn more about our membership.</p>
@@ -63,7 +75,7 @@
         <h3>Warren Buffet</h3>
         <p>invest in Berkshire Hathaway today.</p>
         <img
-          src="images/berkshirehathawaybuilding.jpg"
+          src="images/berkshire-hathaway-building.jpg"
           alt="warren buffet's business logo for Berkshire Hathaway"
         />
       </div>
@@ -80,6 +92,7 @@
         </p>
         <img
           src="images/charlesschwab_interior.jpg"
+          class="schwabfield"
           alt="Charles Schwab Field business logo for the College World Series"
         />
         <h3>Fashion Week - Omaha</h3>
@@ -89,10 +102,12 @@
           season and is attended by high-end models from all over the nation.
         </p>
         <img
+          class="omahafashion"
           src="images/fashionwk1_omaha.webp"
           alt="Fashion Week in Omaha Nebraska"
         />
         <img
+          class="omahafashion2"
           src="images/fashionwk2_omaha.jpg"
           alt="Fashion Week in Omaha Nebraska"
         />
@@ -104,8 +119,16 @@
           events of the like are fine opportunities for businesses of all sorts
           to take part in integrating themselves in the community of Omaha.
         </p>
-        <img src="images/oktoberfest_omaha.jpg" alt="Oktoberfest" />
-        <img src="images/oktoberfest2_omaha.jpg" alt="Oktoberfest" />
+        <img
+          src="images/oktoberfest_omaha.jpg"
+          class="oktoberfest"
+          alt="Oktoberfest"
+        />
+        <img
+          src="images/oktoberfest2_omaha.jpg"
+          class="oktoberfest2"
+          alt="Oktoberfest"
+        />
 
         <h2>The Omaha Rodeo</h2>
         <p>
@@ -114,7 +137,11 @@
           the city. It is held in the Ak-Sar-Ben stadium and is held by the
           Professional Cowboys Rodeo Association (PRCA)
         </p>
-        <img src="images/omaharodeo.jpg" alt="The Omaha Rodeo" />
+        <img
+          src="images/omaharodeo.jpg"
+          class="omaharodeo"
+          alt="The Omaha Rodeo"
+        />
       </li>
     </section>
     <footer style="height: 139.33px">
@@ -124,6 +151,10 @@
     <script src="scripts/weathercard.js"></script>
     <script src="scripts/directory.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/footer.js"></script>
   </body>
 </html>
+
+
+

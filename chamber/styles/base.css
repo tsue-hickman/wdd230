@@ -101,6 +101,10 @@ footer {
   text-align: center;
 }
 
+.spaceholder {
+  height: 60px;
+}
+
 .cta {
   background-color: var(--accent-color2);
   color: white;
@@ -151,10 +155,44 @@ h3 {
   text-align: center;
 }
 p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.schwabfield {
   display: grid;
   grid-template-columns: 1/3;
   text-align: center;
-  max-width: 500px;
+  max-width: 750px;
+  padding-left: 330px;
+}
+
+.omahafashion {
+  text-align: center;
+  max-width: 40%;
+  padding-left: 270px;
+}
+
+.omahafashion2 {
+  text-align: center;
+  max-width: 30%;
+}
+
+.oktoberfest {
+  text-align: center;
+  max-width: 40%;
+  padding-left: 270px;
+}
+
+.oktoberfest2 {
+  padding-left: 200px;
+}
+
+.omaharodeo {
+  text-align: center;
+  max-width: 40%;
+  padding-left: 550px;
 }
 
 /* Styling the menu */
@@ -164,6 +202,15 @@ p {
   padding: 0.5rem;
   background-color: var(--primary-color);
   text-align: center;
+  display: none;
+}
+/* Hamburger Menu
+.menu {
+  display: none;
+} */
+
+.menu-items {
+  display: none;
 }
 
 .menu button {
@@ -262,4 +309,19 @@ main img {
 
 .events-btn {
   text-align: center;
+}
+
+/* Media Query for Hamburger Menu */
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .menu.active .menu-items {
+    display: block;
+  }
 }
