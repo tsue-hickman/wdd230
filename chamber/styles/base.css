@@ -43,6 +43,7 @@ body {
   text-align: center;
   padding: 20px;
   position: relative; /* Make relative for absolute positioning */
+  max-height: 80px;
 }
 
 .hero-banner img {
@@ -68,8 +69,8 @@ body {
   position: absolute;
   top: 100%; /* Move banner below hero image */
   left: 0;
-  height: 20px;
-  width: 988px; /* Stretch across the screen */
+  height: 10px;
+  width: 1097px; /* Stretch across the screen */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 

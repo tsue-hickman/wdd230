@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Front End Development Tayler Sue Hickman chamber site pages"
+    />
+    <meta name="author" content="Tayler Sue Hickman" />
+    <title>Tayler Sue Hickman - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="images/faviconomaha.jpg" type="image/jpg/favicon" />
+    <link
+      rel="url hometown"
+      href="https://www.onlyinyourstate.com/iowa/small-town-capital-ia/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <style>
+      /* Style for the container div */
+      .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      /* Style for the content inside the container */
+      .scroll-content {
+        width: auto;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="images/omaha-skyline-hero.jpg" target="_blank">
+      <img src="images/omaha-skyline-hero.jpg" alt="Omaha Skyline Hero Image" />
+    </a>
+    <header class="hero-banner" style="height: 174.23px">
+      <h1>Welcome to the Chamber of Commerce - Omaha, Nebraska</h1>
+      <p>Chamber of Commerce - Omaha, Nebraska</p>
+      <div class="spaceholder"></div>
+      <div id="meetAndGreetBanner" class="banner" style="height: 50px">
+        <p>
+          Join us for the Chamber of Commerce meet and greet on Wednesday at
+          7:00 p.m.
+        </p>
+        <button id="closeBannerButton">Close</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <img src="images/charlesschwab_interior.jpg" alt="" />
+      <img src="images/fashionwk1_omaha.webp" alt="" />
+      <img src="images/berkshire-hathaway-building.jpg" alt="" />\
+    </div>
+
+    <footer style="height: 139.33px">
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/weathercard.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+</html>
