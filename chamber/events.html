@@ -1,0 +1,55 @@
+<!-- chamber\events.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Front End Development Tayler Sue Hickman chamber site pages"
+    />
+    <meta name="author" content="Tayler Sue Hickman" />
+    <title>Tayler Sue Hickman - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="images/faviconomaha.jpg" type="image/jpg/favicon" />
+    <link
+      rel="url hometown"
+      href="https://www.onlyinyourstate.com/iowa/small-town-capital-ia/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+<body>
+    <a href="images/omaha-skyline-hero.jpg" target="_blank"
+    ><img src="images/omaha-skyline-hero.jpg"
+  /></a>
+  <header class="hero-banner">
+    <h1>Welcome to the Chamber of Commerce Events Page for Omaha, Nebraska</h1>
+    <p class="minihead">Chamber of Commerce - Omaha, Nebraska</p>
+  </header>
+  <nav>
+    <section class="currentevents">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" id="searchButton">Search</button>
+          </div>
+          <div id="searchResults"></div>          
+    </section>
+<footer style="height: 139.33px">
+    <p id="copyright"></p>
+    <p id="lastModified"></p>
+    <link rel="sources" href="https://tickets-center.com/">
+  </footer>
+  <script src="scripts/banner.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/events.js"></script>
+  <script src="scripts/footer.js"></script>
+</body>
+</html>

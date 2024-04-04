@@ -49,6 +49,7 @@ body {
   max-width: 50%; /* Preserve image integrity */
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* Center the overlay text */
@@ -245,6 +246,7 @@ main .grid-view section {
 main .grid-view img {
   border: 1px solid #fff;
   box-shadow: 0 0 10px #333;
+  border-radius: 10px;
 }
 
 main .grid-view section > * {
@@ -273,7 +275,8 @@ main .list-view section > * {
 }
 
 main .list-view section img {
-  display: none; /* smaller viewports only */
+  display: none;
+  border-radius: 10px;
 }
 
 main .list-view section h3 {
@@ -305,6 +308,7 @@ main article a {
 main img {
   height: 75px;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .events-btn {
@@ -461,4 +465,29 @@ footer {
   form {
     padding: 10px; /* Reduce form padding on smaller screens */
   }
+}
+
+/* --search bar events page-- */
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #ddd;
 }
