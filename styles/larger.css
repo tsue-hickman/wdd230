@@ -14,8 +14,7 @@
 
   main {
     display: grid;
-    /* grid-template-columns: 0.8fr auto; */
-    grid-gap: 70px;
+    grid-template-columns: 1fr;
   }
 
   .card2 {
@@ -32,3 +31,6 @@
     text-align: center;
   }
 }
+
+.map {
+  text-align: center;

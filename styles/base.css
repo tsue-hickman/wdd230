@@ -64,7 +64,6 @@ nav#nav1 a:hover {
 }
 
 main {
-  padding: 20px;
 }
 
 .hero-img {
@@ -115,12 +114,15 @@ h1.headnme {
   margin-top: 10px;
   border: 1px solid #ddd;
   padding: 20px;
+  padding-right: 200px;
   background-color: var(--primary-color);
 }
 
 .overlay {
-  position: relative;
-  width: 100%;
+  margin: 0;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
 }
 
 .overlay-text {

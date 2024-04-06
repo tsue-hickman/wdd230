@@ -45,25 +45,25 @@
       <a href="week01/siteplan/chamber-site-plan.html">Site Plan</a>
       <a href="form.html">Form</a>
     </nav>
+    <picture>
+      <source
+        srcset="images/dctempleimg4websiteactualcopy2.webp"
+        media="(max-width: 400px)"
+      />
+      <source
+        srcset="images/dctempleimg4websiteactual3.webp"
+        media="(min-width: 401px)"
+      />
+      <img
+        class="hero-img"
+        src="images/dctempleimg4websiteactual.webp"
+        alt="Favorite Latter-day Temple"
+      />
+    </picture> 
+    <div class="overlay">
+      <div class="overlay-text">Washington DC Temple</div>
+    </div>
     <main>
-      <picture>
-        <source
-          srcset="images/dctempleimg4websiteactualcopy2.webp"
-          media="(max-width: 400px)"
-        />
-        <source
-          srcset="images/dctempleimg4websiteactual3.webp"
-          media="(min-width: 401px)"
-        />
-        <img
-          class="hero-img"
-          src="images/dctempleimg4websiteactual.webp"
-          alt="Favorite Latter-day Temple"
-        />
-      </picture>
-      <div class="overlay">
-        <div class="overlay-text">Washington DC Temple</div>
-      </div>
       <h1 class="headb4name">WDD 230: Web Frontend Development</h1>
       <section class="card1">
         <h2>Learning Activities</h2>
@@ -101,6 +101,11 @@
         <p>Misc: <span id="miscPlaceholder">Loading...</span></p>
       </section>
     </main>
+      <section class="map">
+        <h2>Map to the Washington DC temple</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.0454441287984!2d-77.06821592455432!3d39.01427683980003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7ced232fa530f%3A0xaf60ba5252d6a5a2!2sWashington%20D.C.%20Temple!5e0!3m2!1sen!2sus!4v1712425854636!5m2!1sen!2sus"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
     <footer>
       <p id="copyright"></p>
       <p id="lastModified"></p>
