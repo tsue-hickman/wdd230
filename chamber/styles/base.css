@@ -42,7 +42,6 @@ body {
   background-color: var(--primary-color);
   text-align: center;
   padding: 20px;
-  position: relative; /* Make relative for absolute positioning */
   max-height: 80px;
 }
 
@@ -67,10 +66,9 @@ body {
   text-align: center;
   padding: 10px;
   position: absolute;
-  top: 100%; /* Move banner below hero image */
+  top: 0%; /* Move banner below hero image */
   left: 0;
-  height: 10px;
-  width: 1097px; /* Stretch across the screen */
+  width: 100%; /* Stretch across the screen */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
 }
 
