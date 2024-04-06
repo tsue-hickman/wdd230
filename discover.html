@@ -3,48 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta author="Tayler Hickman" content="discoveromaha" />
+    <meta name="author" content="Tayler Hickman" />
     <title>Chamber of Commerce - Omaha, Nebraska</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <h1 class="h1-main">Chamber of Commerce - Omaha, Nebraska</h1>
-      <nav>
-        <ul class="ul-main">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a href="#discover">Discover</a></li>
-          <li><a href="#directory">Directory</a></li>
-          <li><a href="#join">Join</a></li>
+      <button id="menuButton">☰</button>
+      <img
+        id="logo"
+        src="./chamber/images/faviconomaha.jpg"
+        alt="favicon for omaha"
+        width="50"
+        height="50"
+      />
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
         </ul>
       </nav>
     </header>
-    <main class="grid-container">
+
+    <main class="discover-main">
       <div class="sidebar">
-        <h2>Sidebar Content</h2>
-        <div id="sidebarContent"></div>
+        <h2>Discover Omaha</h2>
+        <p>Welcome! Let us know if you have any questions.</p>
+        <p>Did you know that ...?</p>
       </div>
+
+      <div id="sidebar-content">
+        <div class="sidebar-content" id="demographics">
+          <img
+            src="#"
+            alt="demographics"
+            loading="lazy"
+            width="500"
+            height="500"
+          />
+        </div>
+        <div class="sidebar-content" id="population">
+          <img
+            src="#"
+            alt="population"
+            loading="lazy"
+            width="500"
+            height="500"
+          />
+        </div>
+        <div class="sidebar-content" id="economy">
+          <img src="#" alt="economy" loading="lazy" width="500" height="500" />
+        </div>
+        <div class="sidebar-content" id="education">
+          <img
+            src="#"
+            alt="education"
+            loading="lazy"
+            width="500"
+            height="500"
+          />
+        </div>
+        <div class="sidebar-content" id="industries">
+          <img
+            src="#"
+            alt="industries"
+            loading="lazy"
+            width="500"
+            height="500"
+          />
+        </div>
+      </div>
+
       <div class="main-content">
-        <img class="lazy-image" src="images/omaha1.webp" alt="omaha image 1" />
-        <img class="lazy-image" src="images/omaha2.webp" alt="omaha image 2" />
-        <img class="lazy-image" src="images/omaha3.webp" alt="omaha image 3" />
-        <img class="lazy-image" src="images/omaha4.webp" alt="omaha image 4" />
-        <img class="lazy-image" src="images/omaha5.webp" alt="omaha image 5" />
-        <img class="lazy-image" src="images/omaha8.webp" alt="omaha image 6" />
+        <h3>The main places to visit in Omaha</h3>
+        <div class="discover-card">
+          <img
+            src="images/omaha1.webp"
+            alt="disimage1"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
+        <div class="discover-card">
+          <img
+            src="images/omaha2.webp"
+            alt="disimage2"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
+        <div class="discover-card">
+          <img
+            src="images/omaha3.webp"
+            alt="disimage3"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
+        <div class="discover-card">
+          <img
+            src="images/omaha4.webp"
+            alt="disimage4"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
+        <div class="discover-card">
+          <img
+            src="images/omaha5.webp"
+            alt="disimage5"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
+        <div class="discover-card">
+          <img
+            src="images/omaha6.webp"
+            alt="disimage6"
+            loading="lazy"
+            width="400"
+            height="225"
+          />
+        </div>
       </div>
     </main>
+
     <footer>
       <p>&copy; 2024 Omaha Chamber of Commerce. All rights reserved.</p>
     </footer>
+
     <script src="scripts/discover.js"></script>
   </body>
 </html>

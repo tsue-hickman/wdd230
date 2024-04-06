@@ -490,3 +490,96 @@ footer {
 #searchButton:hover {
   background-color: #ddd;
 }
+
+/* --discover page-- */
+/* Use CSS custom properties (variables) */
+:root {
+  --accent-color: #007bff;
+  --background-color: #ffffff;
+}
+
+/* General styles */
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--accent-color) 5px solid;
+  padding: 0.5em;
+}
+
+#menuButton {
+  border: none;
+  background-color: var(--background-color);
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.sidebar {
+  padding: 1em;
+  text-align: center;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.sidebar p {
+  font-size: 16px;
+}
+
+.sidebar-content {
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 1rem auto;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.sidebar-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  padding: 1em;
+}
+
+.main-content h3 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--accent-color);
+  padding: 1em;
+  background: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f8f9fa;
+}
