@@ -102,3 +102,105 @@ main img {
 a.events-btn {
   text-align: center;
 }
+
+/* Larger Screen Styles */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sidebar {
+  flex: 0 0 30%; /* Sidebar width */
+}
+
+main {
+  flex: 0 0 60%; /* Main content width */
+}
+
+.membership-benefits {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.membership-benefits h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.membership-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.membership-benefits li {
+  margin-bottom: 8px;
+}
+
+/* General Body Styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.hero-banner {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
