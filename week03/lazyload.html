@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lazy Loading Images on Scroll</title>
     <link rel="stylesheet" href="week03/styles/lazyload.css" />
     <link rel="stylesheet" href="week03/styles/base.css" />
   </head>
@@ -11,48 +11,50 @@
     <header></header>
     <main>
       <img
-        src="./images/kittybesneaky.jpg"
+        data-src="./images/kittybesneaky.jpg"
         alt="sneaky kitty"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
       <img
-        src="./images/kittylookingcrazy.jpg"
+        data-src="./images/kittylookingcrazy.jpg"
         alt="crazy looking kitty"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
       <img
-        src="./images/kittypattingflower.jpg"
+        data-src="./images/kittypattingflower.jpg"
         alt="kitty patting a flower"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
       <img
-        src="./images/kittypraisingjesus.jpg"
+        data-src="./images/kittypraisingjesus.jpg"
         alt="kitty raising paw to the sky"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
       <img
-        src="./images/kittystaring.jpg"
+        data-src="./images/kittystaring.jpg"
         alt="kitty staring at something"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
       <img
-        src="./images/violentflowerkitty.jpg"
+        data-src="./images/violentflowerkitty.jpg"
         alt="kitty looking violent"
-        loading="lazy"
         width="400"
         height="600"
+        class="lazy"
       />
     </main>
     <footer></footer>
+
+    <script src="./week03/scripts/lazyload.js"></script>
   </body>
 </html>
