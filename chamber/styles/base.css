@@ -530,15 +530,15 @@ footer {
 #economy,
 #education,
 #costofliving {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   padding: 20px;
   padding-bottom: 30px;
   border-radius: 10px;
 }
 .discover-card {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -549,4 +549,37 @@ footer {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+/* discover HTML - styles/images.css */
+
+.content {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any vertical spacing */
+  width: 100%; /* Make images fill their parent container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Scale images uniformly within their container */
+}
+
+#discoverHeader {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 55px;
+}
+
+/* CSS to hide menu items by default */
+#menuItems {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+#menuItems li {
+  padding: 10px;
+}
+
+#menuItems li a {
+  text-decoration: none;
+  color: #333;
 }

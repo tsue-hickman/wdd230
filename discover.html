@@ -6,6 +6,7 @@
     <meta name="author" content="Tayler Hickman" />
     <title>Chamber of Commerce - Omaha, Nebraska</title>
     <link rel="stylesheet" href="chamber/styles/base.css" />
+    <link rel="stylesheet" href="chamber/styles/discover.css" />
     <link rel="stylesheet" href="chamber/styles/larger.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400&display=swap"
@@ -13,17 +14,11 @@
     />
   </head>
   <body>
-    <header>
-      <button id="menuButton">☰</button>
-      <img
-        id="logo"
-        src="./chamber/images/faviconomaha.webp"
-        alt="favicon for omaha"
-        width="50"
-        height="50"
-      />
+    <a href="chamber/images/omaha-skyline-hero.webp" target="_blank"> </a>
+    <header id="discoverHeader">
       <nav id="mainNav">
-        <ul>
+        <h1 id="discoverTitle">Chamber of Commerce - Omaha, Nebraska</h1>
+        <ul id="menuItems">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
@@ -31,20 +26,18 @@
         </ul>
       </nav>
     </header>
-
+    
     <div class="sidebar">
       <h2>Discover Omaha</h2>
       <p>Welcome! Let us know if you have any questions.</p>
       <p>Did you know that ...?</p>
-
+<section class="imagessidebar">
       <div id="sidebar-content">
         <div class="sidebar-content" id="demographics">
           <img
             src="chamber/images/MSA-Population-Change-1.webp"
             alt="demographics"
             loading="lazy"
-            width="50"
-            height="50"
           />
         </div>
         <div class="sidebar-content2" id="population">
@@ -52,8 +45,6 @@
             src="chamber/images/population-omaha.webp"
             alt="population"
             loading="lazy"
-            width="50"
-            height="50"
           />
         </div>
         <div class="sidebar-content3" id="economy">
@@ -61,8 +52,6 @@
             src="chamber/images/economyomaha.webp"
             alt="economy"
             loading="lazy"
-            width="50"
-            height="50"
           />
         </div>
         <div class="sidebar-content4" id="education">
@@ -70,8 +59,6 @@
             src="chamber/images/Colleges-in-Nebraska-Map.webp"
             alt="education"
             loading="lazy"
-            width="50"
-            height="50"
           />
         </div>
         <div class="sidebar-content5" id="costofliving">
@@ -79,16 +66,14 @@
             src="chamber/images/costoflivingomaha.webp"
             alt="costofliving"
             loading="lazy"
-            width="50"
-            height="50"
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <main class="main-discover">
+      <h3>Some of the best views of Omaha</h3>
       <div class="main-content">
-        <h3>Some of the best views of Omaha</h3>
         <div class="discover-card">
           <img
             src="images/omaha1.webp"
@@ -97,6 +82,7 @@
             width="400"
             height="225"
           />
+          <p class="imgtitle">The Omaha Riverfront Trail</p>
         </div>
         <div class="discover-card">
           <img
@@ -106,6 +92,9 @@
             width="400"
             height="225"
           />
+          <p class="imgtitle">
+            The main highway into Omaha from Council Bluffs
+          </p>
         </div>
         <div class="discover-card">
           <img
@@ -115,6 +104,7 @@
             width="400"
             height="225"
           />
+          <p class="imgtitle">The Heartland of America Park fountains</p>
         </div>
         <div class="discover-card">
           <img
@@ -124,6 +114,7 @@
             width="400"
             height="225"
           />
+          <p class="imgtitle">The West Side of Omaha</p>
         </div>
         <div class="discover-card">
           <img
@@ -133,6 +124,7 @@
             width="400"
             height="225"
           />
+          <p class="imgtitle">Aerial View of Downtown Omaha</p>
         </div>
       </div>
     </main>
@@ -142,5 +134,6 @@
     </footer>
 
     <script src="scripts/discover.js"></script>
+    <script src="scripts/menu-bu"></script>
   </body>
 </html>

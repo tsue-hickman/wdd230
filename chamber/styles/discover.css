@@ -1,0 +1,142 @@
+/* General Body Styling */
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header#discoverHeader {
+  background-color: #007bff;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  width: 3000px;
+}
+
+/* Navigation Styling */
+nav#mainNav {
+  text-align: center;
+  color: black;
+  background-color: #007bff;
+}
+
+ul#menuItems {
+  display: inline;
+  list-style-type: fixed;
+  padding: 0;
+}
+
+ul#menuItems li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul#menuItems li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #2d3142;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  width: 260px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.imagessidebar {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding-top: 100px;
+}
+
+img {
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Main Content Styling */
+.main-discover {
+  margin-left: 280px; /* Adjusted to accommodate sidebar width */
+  padding: 20px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.main-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.discover-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+}
+
+.discover-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .main-discover {
+    margin-left: 0;
+  }
+
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
